@@ -27,7 +27,7 @@ class TodoDatabase {
         do {
             connect()
             try migrator.migrate(dbQueue)
-            let appliedMigrations = try migrator.appliedMigrations(in: dbQueue)
+            addItem("Jjjj")
         }
         catch {
             print("DB connection error.")
@@ -86,7 +86,7 @@ class TodoDatabase {
         do {
             let items = try dbQueue.inDatabase { (db: Database) -> [Item] in
                 var items = [Item]()
-                let rows = try Row.fetchCursor(db, "SELECT * FROM \(Item.databaseTableName) WHERE isDone=0")
+                let rows = try Row.fetchCursor(db, "SELECT * FROM \(Item.databaseTableName) WHERE isDone = 0")
                 while let row = try rows.next() {
                     items.append(Item(row: row))
                 }
@@ -113,31 +113,19 @@ class TodoDatabase {
         }
     }
     
-    public func setItemToDone(_ id: Int64) {
+    public func setItemToDone(_ id: Int64) throws {
         do {
             try dbQueue.write { (db: Database) in
                 try db.execute(
-                    "UPDATE items SET isDone = True WHERE id = ?;",
+                    "UPDATE items SET isDone = 1 WHERE id = ?;",
                     arguments: [id]
                 )
             }
         }
         catch {
-            print("could not mark item \(id) as done")
+            throw "could not mark item \(id) as done"
         }
     }
 }
 
-//
-//INSERT INTO items (id, name, isDone)
-//VALUES (1, "first item", "False");
-//
-//CREATE TABLE items(
-//    id INT PRIMARY KEY     NOT NULL,
-//    name           TEXT    NOT NULL,
-//    isDone          BOOL    NOT NULL
-//);
-//
-//UPDATE items SET isDone = "True" WHERE id = 1;
-//
-//DROP TABLE todo.items;
+extension String: Error {}

@@ -34,7 +34,14 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let id = items[indexPath.row].id
         if let i = id {
-            db.setItemToDone(i)
+            do {
+                try db.setItemToDone(i)
+                items.remove(at: indexPath.row)
+                self.tableView.reloadSections(NSIndexSet(index: 0) as IndexSet, with: UITableView.RowAnimation.right)
+            }
+            catch {
+                print("Error in set item \(i) to done")
+            }
         }
     }
 
