@@ -11,11 +11,11 @@
 		6910EE7021B8E40300901E74 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910EE6F21B8E40300901E74 /* TodoListViewController.swift */; };
 		6910EE7221B8E5A300901E74 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910EE7121B8E5A300901E74 /* Item.swift */; };
 		6910EE7621B8EA1200901E74 /* SqliteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910EE7521B8EA1200901E74 /* SqliteService.swift */; };
+		6938ACC321C065FB0064FC60 /* todo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6938ACC221C065FB0064FC60 /* todo.sqlite */; };
 		69648E4821B8DFC9004B8C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69648E4721B8DFC9004B8C71 /* AppDelegate.swift */; };
 		69648E4D21B8DFC9004B8C71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69648E4B21B8DFC9004B8C71 /* Main.storyboard */; };
 		69648E4F21B8DFCA004B8C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69648E4E21B8DFCA004B8C71 /* Assets.xcassets */; };
 		69648E5221B8DFCA004B8C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69648E5021B8DFCA004B8C71 /* LaunchScreen.storyboard */; };
-		69E6CBBA21BB95C000499D46 /* todo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 69E6CBB921BB95C000499D46 /* todo.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +24,13 @@
 		6910EE6F21B8E40300901E74 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		6910EE7121B8E5A300901E74 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6910EE7521B8EA1200901E74 /* SqliteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteService.swift; sourceTree = "<group>"; };
+		6938ACC221C065FB0064FC60 /* todo.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.sqlite; sourceTree = "<group>"; };
 		69648E4421B8DFC9004B8C71 /* Project 4 Sou Mizobuchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 4 Sou Mizobuchi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69648E4721B8DFC9004B8C71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69648E4C21B8DFC9004B8C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69648E4E21B8DFCA004B8C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69648E5121B8DFCA004B8C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69648E5321B8DFCA004B8C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69E6CBB921BB95C000499D46 /* todo.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.sqlite; sourceTree = "<group>"; };
 		8446FE0709440B2DB8BE0771 /* Pods_Project_4_Sou_Mizobuchi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_4_Sou_Mizobuchi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,8 +113,8 @@
 				6910EE6D21B8E0CA00901E74 /* View */,
 				6910EE6C21B8E0C200901E74 /* Model */,
 				69648E4721B8DFC9004B8C71 /* AppDelegate.swift */,
+				6938ACC221C065FB0064FC60 /* todo.sqlite */,
 				69648E4E21B8DFCA004B8C71 /* Assets.xcassets */,
-				69E6CBB921BB95C000499D46 /* todo.sqlite */,
 				69648E5321B8DFCA004B8C71 /* Info.plist */,
 			);
 			path = "Project 4 Sou Mizobuchi";
@@ -190,7 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69648E5221B8DFCA004B8C71 /* LaunchScreen.storyboard in Resources */,
-				69E6CBBA21BB95C000499D46 /* todo.sqlite in Resources */,
+				6938ACC321C065FB0064FC60 /* todo.sqlite in Resources */,
 				69648E4F21B8DFCA004B8C71 /* Assets.xcassets in Resources */,
 				69648E4D21B8DFC9004B8C71 /* Main.storyboard in Resources */,
 			);
